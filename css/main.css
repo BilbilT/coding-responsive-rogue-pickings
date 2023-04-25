@@ -128,8 +128,8 @@ header nav ul li a {
 
 .section-two {
 	width: 100%;
-	border-top: 5px solid #EEE;
-	border-bottom: 5px solid #EEE;
+	/* border-top: 5px solid #EEE;
+	border-bottom: 5px solid #EEE; */
 }
 
 .section-three {
@@ -164,4 +164,70 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: 0.875rem;
+}
+
+@media all and (min-width: 768px) {
+	/**************   TABLET STYLES HERE ************************/
+
+	.bottom-section .content-wrapper {
+		border-top: 6px solid #EEE;
+		border-bottom: 6px solid #EEE;
+		justify-content: space-evenly;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		box-sizing: border-box;
+	}
+
+	.section-one {
+		width: 30%;
+		padding-left: 30px;
+	}
+
+	.section-two {
+		width: 40%;
+		border-left: 6px solid #EEE;
+		border-right: 6px solid #EEE;
+		padding: 0 30px;
+	}
+
+	.section-three {
+		width: 30%;
+		padding-left: 30px;
+	}
+
+}
+
+
+@media all and (min-width: 1200px) {
+
+	/***********************   DESKTOP STYLES HERE ****************/
+	body {
+		font-size: 1em;
+	}
+
+	header .content-wrapper {
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+
+	header h1 {
+		width: 30%;
+		border-bottom: none;
+		padding: 0;
+		text-align: left;
+	}
+
+	header nav {
+		width: 21%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
 }
